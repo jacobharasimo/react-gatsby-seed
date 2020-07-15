@@ -1,5 +1,6 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
+import 'sanitize.css/sanitize.css';
 
 const GlobalStyle = () => (
   <Global
@@ -11,7 +12,6 @@ const GlobalStyle = () => (
         line-height: 1;
       }
       body {
-        margin:0;
         overflow: hidden;
       }
       #___gatsby {

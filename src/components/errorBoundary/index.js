@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box } from 'rebass';
+import { Box, Text } from 'rebass';
 import { Oops } from '../../pages/oops';
 
 export class ErrorBoundary extends React.Component {
@@ -24,7 +24,7 @@ export class ErrorBoundary extends React.Component {
     if (process.env.NODE_ENV === 'development') {
       return (
         <>
-          <h1>Something went wrong</h1>
+          <Text as="h1">Something went wrong</Text>
           <Box as="code" color="errorRed" sx={{ whiteSpace: 'pre' }}>
             {hasError.stack}
           </Box>

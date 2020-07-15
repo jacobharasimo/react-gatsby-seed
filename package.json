@@ -26,7 +26,8 @@
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
     "reselect": "^4.0.0",
-    "saga": "^4.0.0-alpha"
+    "saga": "^4.0.0-alpha",
+    "sanitize.css": "^11.0.1"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.0",

@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
 import React from "react"
 import { Flex, Box } from "rebass"
+import { AnchorLink } from '../link';
 
 export const Header = () => (
   <Flex bg="grey" py={2}>
@@ -10,7 +10,7 @@ export const Header = () => (
     <Box width={11/12}>
       <Flex>
         <Box px={2}>
-          <Link
+          <AnchorLink
             to='/'
             style={{
               color: `white`,
@@ -18,10 +18,10 @@ export const Header = () => (
             }}
           >
             Home
-          </Link>
+          </AnchorLink>
         </Box>
         <Box px={2}>
-          <Link
+          <AnchorLink
             to='/secondPage'
             style={{
               color: `white`,
@@ -29,7 +29,7 @@ export const Header = () => (
             }}
           >
             Page 2
-          </Link>
+          </AnchorLink>
         </Box>
       </Flex>
     </Box>
