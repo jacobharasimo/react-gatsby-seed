@@ -1,8 +1,9 @@
 import React from 'react';
 import { Flex, Box, Text } from 'rebass';
 import { Layout } from '../../components/layout';
-import { Image } from '../../components/image';
 import { AnchorLink } from '../../components/link';
+import { Image } from 'rebass';
+import imageSource from '../../images/gatsby-astronaut.png';
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +14,7 @@ const IndexPage = () => (
         <Text as="p" mb={1}>Now go build something great.</Text>
       </Box>
       <Box variant="container" mb="1.45rem">
-        <Image width="300px"/>
+        <Image src={imageSource} width={300}/>
       </Box>
       <Box variant="container">
         <AnchorLink  to="/page-2/">Go to page 2</AnchorLink> <br/>

@@ -10,11 +10,133 @@ const customTheme = {
   radii: {
     default: 0,
   },
+  buttons: {
+    black: {
+      fontSize: 2,
+      fontWeight: 'bold',
+      color: 'black',
+      borderWidth: '2px',
+      borderStyle: 'solid',
+      borderColor: 'primary',
+      bg: 'white',
+      borderRadius: 'default',
+      cursor: 'pointer',
+      ':hover': {
+        bg: 'black',
+        color: 'white',
+      },
+    },
+    white: {
+      fontSize: 2,
+      fontWeight: 'bold',
+      color: 'black',
+      bg: 'white',
+      borderRadius: 'default',
+      cursor: 'pointer',
+      ':hover': {
+        bg: 'primary',
+        color: 'white',
+      },
+    },
+    primary: {
+      fontSize: 2,
+      fontWeight: 'bold',
+      color: 'black',
+      borderWidth: '2px',
+      borderStyle: 'solid',
+      borderColor: 'primary',
+      bg: 'white',
+      borderRadius: 'default',
+      cursor: 'pointer',
+      ':hover': {
+        bg: 'black',
+        color: 'white',
+      },
+    },
+    invertLink: {
+      borderRadius: 0,
+      backgroundColor: 'black',
+      color: 'white',
+      ':hover': {
+        bg: 'primary',
+      },
+    },
+    link: {
+      borderRadius: 0,
+      backgroundColor: 'transparent',
+      color: 'black',
+      ':hover': {
+        backgroundColor: 'gray',
+      },
+    },
+  },
   variants: {
+    link: {
+      cursor: 'pointer',
+      color: 'white',
+      textDecoration: 'none',
+    },
+    alignHeight: {
+      flexGrow: '1',
+      alignItems: 'stretch',
+      display: 'flex',
+    },
+    card: {
+      boxShadow: 'none',
+    },
+    shadow: {
+      bg: 'background',
+      boxShadow: 'card',
+    },
+    primaryButton: {
+      background: 'blue',
+      color: 'white',
+    },
     container: {
-      mx: 'auto',
-      width: '1170px',
-      maxWidth: '1170px',
+      maxWidth: '960px',
+      margin: 'auto',
+      width: '100%',
+      display: 'block',
+    },
+    unstyledList: {
+      listStyle: 'none',
+      padding: 0,
+    },
+    navList: {
+      listStyle: 'none',
+      padding: 0,
+    },
+    subNav: {
+      padding: 0,
+      listStyle: 'none',
+      position: 'absolute',
+    },
+    navItem: {
+      cursor: 'pointer',
+      ':hover, :focus': {
+        '> a':{
+          bg: '#dddddf',
+        },
+        '> ul': {
+          display: 'block',
+        },
+      },
+      '> ul': {
+        display: 'none',
+      },
+    },
+    subNavItem: {
+      bg: 'lightGrey',
+      cursor: 'pointer',
+      backgroundColor: 'rgba(255,255,255,.9)',
+      color: 'black',
+      a: {
+        color: 'inherit',
+        textDecoration: 'none',
+        ':hover': {
+          backgroundColor: 'gray',
+        },
+      },
     },
   },
 };

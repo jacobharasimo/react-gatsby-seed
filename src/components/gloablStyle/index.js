@@ -7,7 +7,8 @@ const GlobalStyle = () => (
     styles={css`
       html,
       body,
-      #___gatsby {
+      #___gatsby,
+      #gatsby-focus-wrapper {
         height: 100%;
         line-height: 1;
       }

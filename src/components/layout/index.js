@@ -14,6 +14,7 @@ import { Flex, Box } from "rebass"
 import { Header } from "../header"
 import { Footer } from "../footer"
 import theme from "../../theme"
+import { NavRibbon } from '../navRibbon';
 import { Seo } from "../seo"
 import { TwitterSeo } from "../twitterSeo"
 import { ErrorBoundary } from "../errorBoundary"
